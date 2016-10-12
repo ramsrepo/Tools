@@ -24,7 +24,7 @@
 								</div>
 								<div class="form-wrap">
 									
-									<form  role="form" action="Sample.html" id="login-form" name="loginForm">
+									<form  role="form" action="/home" id="login-form" name="loginForm" method="GET">
 										<div class="form-group">
 											<label for="username">Username</label> 
 											<input type="text" name="ssoId" id="username" class="form-control" required>

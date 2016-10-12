@@ -14,7 +14,8 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @ComponentScan(basePackages = "com.app")
 public class ToolsApplicationConfiguration extends WebMvcConfigurerAdapter {
-    @Bean
+    
+	@Bean
     public ViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
@@ -23,10 +24,9 @@ public class ToolsApplicationConfiguration extends WebMvcConfigurerAdapter {
         return viewResolver;
     }
     
-    /*
-     * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...
-     *
-     */
+    
+    /* Configure ResourceHandlers to serve static resources like CSS/ Javascript etc... */
+    
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**").addResourceLocations("/");
