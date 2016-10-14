@@ -4,7 +4,7 @@
 <html ng-app="taskToolApp">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Monitor</title>
+<title>Tools</title>
 
 	<link href="<c:url value='libraries/bootstrap/css/AdminLTE.css' />" rel="stylesheet"></link>
 	<link href="<c:url value='/libraries/bootstrap/css/bootstrap.min.css' />"  rel="stylesheet"></link>
@@ -18,7 +18,7 @@
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 				<div class="navbar-inner">
 					<div class="container-fluid">
-						<a class="brand pull-left" href="javascript:void(0)" >Monitoring Tool
+						<a class="brand pull-left" href="javascript:void(0)" >ToolS
 							<span id="toggleMenuSwitch" class="glyphicon glyphicon-align-justify pull-right"></span>
 						</a>
 						
@@ -48,7 +48,7 @@
 									<!-- <li><a href="user_profile.html">My Profile</a></li>
 									<li><a href="javascrip:void(0)">Another action</a></li>
 									<li class="divider"></li> -->
-									<li><a href="login.html">Log Out</a></li>
+									<li><a href="<%=request.getContextPath()%>/">Log Out</a></li>
 								</ul></li>
 						</ul>
 					</div>
@@ -220,25 +220,20 @@
 		
 		
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="../assets/libraries/jquery/jquery-1.10.js"/></script>
+	<script src="<c:url value='libraries/jquery/jquery-1.10.js'/>" ></script>
 
 <!-- AngularJS, Bootstrap & Application related Scripts -->
-	<script src="../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
-	<script src="../assets/libraries/bootstrap/js/bootstrap-datepicker.js"></script>
-	<script src="../assets/libraries/bootstrap/js/bootstrap-timepicker.min.js"></script>
+	<script src="<c:url value='libraries/bootstrap/js/bootstrap.min.js'/>" ></script>
+	<%-- <script src="<c:url value='libraries/bootstrap/js/bootstrap-datepicker.js'/>" ></script>
+	<script src="<c:url value='libraries/bootstrap/js/bootstrap-timepicker.min.js'/>" ></script>
 	
-	<script src="../assets/libraries/angular/angular.js"></script>
-	<script src="../assets/libraries/angular/angular-ui-router.js"></script>
+	<script src="<c:url value='libraries/angular/angular.js'/>" ></script>
+	<script src="<c:url value='libraries/angular/angular-ui-router.js'/>" ></script>
 	
-	<script src="../assets/libraries/chart.js"></script>
-	<script src="../assets/libraries/angular/angular-chart.js"></script>
+	<script src="<c:url value='libraries/chart.js'/>" ></script>
+	<script src="<c:url value='libraries/angular/angular-chart.js'/>" ></script> --%>
 	
-<!-- Application Scripts -->
-	<script src="../app.js" ></script>
-	<script src="../controllers.js" ></script>
-	<script src="../assets/libraries/pageslide-directive.js" ></script>
-	
-	
+
 	<script>
 	
 		var $body = $('body');
